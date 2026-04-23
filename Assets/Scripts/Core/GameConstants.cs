@@ -1,6 +1,6 @@
 ﻿namespace Core
 {
-    public class GameConstants
+    public static class GameConstants
     {
         public const float PlayerMoveSpeed = 5.0f;
         public const float VehicleMoveSpeed = 8.0f;
