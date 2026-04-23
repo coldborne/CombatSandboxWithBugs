@@ -6,6 +6,7 @@ using Logger = Core.Logger;
 
 namespace Character
 {
+    [RequireComponent(typeof(Rigidbody))]
     public class Player : MonoBehaviour
     {
         private const float Epsilon = 0.01f;
