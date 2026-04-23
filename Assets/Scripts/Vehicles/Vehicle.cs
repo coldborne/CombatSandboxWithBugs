@@ -6,8 +6,7 @@ using Logger = Core.Logger;
 
 namespace Vehicles
 {
-    [RequireComponent(typeof(VehicleSeat))]
-    [RequireComponent(typeof(VehicleModel))]
+    [RequireComponent(typeof(Rigidbody))]
     public class Vehicle : MonoBehaviour
     {
         [SerializeField] private VehicleSeat _seat;
