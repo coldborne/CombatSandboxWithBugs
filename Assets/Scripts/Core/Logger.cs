@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Core
 {
-    public class Logger : MonoBehaviour
+    public class Logger
     {
         public void LogInfo(string message)
         {
