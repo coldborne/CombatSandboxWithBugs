@@ -14,6 +14,14 @@ The project focuses on:
 ## Goal
 The goal of the project is not to build a full game, but to build a testable gameplay sandbox that demonstrates strong QA thinking, debugging approach, system understanding, and automation.
 
+## QA Documentation
+Project documentation is available in the `docs` folder:
+- test plan
+- test cases
+- smoke checklist
+- reproducible scenarios
+- bug reports
+
 ## Implemented Systems
 - character movement
 - weapon firing and reload
@@ -32,14 +40,6 @@ This sandbox includes several intentionally enabled bugs for demonstration purpo
 - player exits vehicle into blocked geometry
 - weapon can fire with zero ammo
 - dead player still counts for capture
-
-## QA Documentation
-Project documentation is available in the `docs` folder:
-- test plan
-- test cases
-- smoke checklist
-- reproducible scenarios
-- bug reports
 
 ## Controls
 - WASD - move
