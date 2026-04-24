@@ -2,7 +2,7 @@
 
 ### Preconditions
 - Player is alive
-- Vehicle is on the map
+- Vehicle exists on the map
 - Driver seat is empty
 
 ### Steps
