@@ -7,8 +7,7 @@
 
 ### Steps
 1. Move within the radius of interaction with vehicle
-2. Press `E`
+2. Press `E` to enter vehicle
 
 ### Expected Result
-Player enters vehicle.
-Vehicle receives current driver.
+Player enters vehicle. Player's texture gets caught in the vehicle. Vehicle receives current driver.
