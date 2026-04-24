@@ -72,11 +72,10 @@ namespace Character
             _logger.LogInfo("Reload started.");
 
             yield return new WaitForSeconds(GameConstants.ReloadDurationSecondCount);
-
-            _inventory.ReloadMagazine();
-
+            
             if (_stateMachine.GetState() != CharacterState.InsideVehicle)
             {
+                _inventory.ReloadMagazine();
                 _stateMachine.TrySetState(CharacterState.Idle);
             }
 
