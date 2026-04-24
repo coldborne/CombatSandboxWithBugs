@@ -45,6 +45,7 @@ namespace Character
                 if (damageReceiver != null)
                 {
                     damageReceiver.ApplyDamage(25, DamageType.Bullet);
+                    _logger.LogInfo("Weapon dealt damage.");
                 }
             }
         }

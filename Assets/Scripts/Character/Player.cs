@@ -42,11 +42,15 @@ namespace Character
         private void OnEnable()
         {
             _inputReader.InteractionButtonPressed += HandleInteractionInput;
+            _inputReader.FireButtonPressed += Fire;
+            _inputReader.ReloadButtonPressed += Reload;
         }
 
         private void OnDisable()
         {
             _inputReader.InteractionButtonPressed -= HandleInteractionInput;
+            _inputReader.FireButtonPressed -= Fire;
+            _inputReader.ReloadButtonPressed -= Reload;
         }
 
         private void HandleMovementInput()
