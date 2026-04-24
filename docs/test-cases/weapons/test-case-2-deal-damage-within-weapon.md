@@ -1,4 +1,4 @@
-## test-case-2 - Deal damage within weapon
+## test-case-002 - Deal damage within weapon
 
 ### Preconditions
 - Player has at least one ammo in magazine
