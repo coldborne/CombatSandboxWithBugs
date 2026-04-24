@@ -1,0 +1,12 @@
+## Smoke Checklist
+- [ ] Player is visible on the scene
+- [ ] Vehicle is visible on the scene
+- [ ] Target dummy is visible on the scene
+- [ ] Player can move with keyboard input
+- [ ] Player can fire with left mouse button
+- [ ] Player can reload with `R`
+- [ ] Ammo values change after firing and reloading
+- [ ] Player can enter/exit vehicle with `E`
+- [ ] Player can move vehicle after entering
+- [ ] Vehicle engine module can receive damage
+- [ ] Debug overlay opens/closes with `F1`
