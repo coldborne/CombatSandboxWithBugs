@@ -1,4 +1,4 @@
-## test-case-001 — Enter Vehicle
+## test-case-001 - Enter Vehicle
 
 ### Preconditions
 - Player is alive
