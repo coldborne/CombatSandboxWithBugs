@@ -13,4 +13,4 @@
 3. Until reloading is complete press `E` near vehicle
 
 ### Expected Result
-Reload should be safely completed before player starts driving the vehicle.
+Reload should be safely completed before player starts driving the vehicle. Ammo in the magazine should be restored from the ammo in player inventory.
