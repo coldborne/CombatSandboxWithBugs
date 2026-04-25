@@ -9,6 +9,7 @@ namespace Character
     public class Weapon : MonoBehaviour
     {
         [SerializeField] private Transform _firePoint;
+        [SerializeField] private ShotTracer _shotTracer;
 
         private Inventory _inventory;
         private PlayerStateMachine _stateMachine;
@@ -33,8 +34,12 @@ namespace Character
             _inventory.ConsumeAmmoFromMagazine();
             _logger.LogInfo("Weapon fired.");
 
-            bool isHit = Physics.Raycast(_firePoint.position,
-                _firePoint.forward,
+            Vector3 startPosition = _firePoint.position;
+            Vector3 direction = _firePoint.forward;
+            Vector3 endPosition = startPosition + direction * GameConstants.FireDistance;
+
+            bool isHit = Physics.Raycast(startPosition,
+                direction,
                 out RaycastHit hit,
                 GameConstants.FireDistance);
 
@@ -48,6 +53,8 @@ namespace Character
                     _logger.LogInfo("Weapon dealt damage.");
                 }
             }
+
+            _shotTracer.ShowTracer(startPosition, endPosition);
         }
 
         public void TryStartReload()
@@ -72,7 +79,7 @@ namespace Character
             _logger.LogInfo("Reload started.");
 
             yield return new WaitForSeconds(GameConstants.ReloadDurationSecondCount);
-            
+
             if (_stateMachine.GetState() != CharacterState.InsideVehicle)
             {
                 _inventory.ReloadMagazine();
