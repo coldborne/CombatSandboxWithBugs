@@ -16,7 +16,7 @@ The goal of the project is not to build a full game, but to build a testable gam
 
 ## QA Documentation
 Project documentation is available in the `docs` folder:
-- test plan
+- test plan on last version
 - test cases
 - smoke checklist
 - reproducible scenarios
