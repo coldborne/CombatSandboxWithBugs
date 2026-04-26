@@ -16,7 +16,7 @@ The goal of the project is not to build a full game, but to build a testable gam
 
 ## QA Documentation
 Project documentation is available in the `docs` folder:
-- test plan on last version
+- test plan on last version (It's easiest to study the documentation through it) [link](https://github.com/coldborne/CombatSandboxWithBugs/blob/master/docs/test-plans/0.1-test-plan.md)
 - test cases
 - smoke checklist
 - bug reports
