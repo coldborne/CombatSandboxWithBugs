@@ -19,7 +19,6 @@ Project documentation is available in the `docs` folder:
 - test plan on last version
 - test cases
 - smoke checklist
-- reproducible scenarios
 - bug reports
 
 ## Implemented Systems
@@ -29,17 +28,16 @@ Project documentation is available in the `docs` folder:
 - vehicle mobility and module damage
 - capture point
 - debug overlay
-- repro scenario runner
 - session logging
 
 ## Intentional Bugs
 This sandbox includes several intentionally enabled bugs for demonstration purposes:
-- player remains in reloading state after entering vehicle
 - vehicle can move with destroyed engine
-- capture progress does not reset
 - player exits vehicle into blocked geometry
 - weapon can fire with zero ammo
+- capture progress does not reset
 - dead player still counts for capture
+- capture progress is not displayed on the player`s screen 
 
 ## Controls
 - WASD - move
