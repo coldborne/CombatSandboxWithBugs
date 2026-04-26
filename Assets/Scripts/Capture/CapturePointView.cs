@@ -13,7 +13,6 @@ namespace Capture
             float progress = _capturePoint.GetCaptureProgress();
             int percent = Mathf.RoundToInt(progress * 100.0f);
 
-            Debug.Log(percent);
             _text.text = percent + "%";
         }
     }
