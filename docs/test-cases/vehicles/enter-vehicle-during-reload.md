@@ -1,4 +1,4 @@
-## test-case-005 - Enter Vehicle During Reload
+## test-case-005 - Enter vehicle during reload
 
 ### Preconditions
 - Player is alive
