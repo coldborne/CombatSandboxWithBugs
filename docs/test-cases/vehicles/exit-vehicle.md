@@ -1,4 +1,4 @@
-## test-case-002 - Exit Vehicle
+## test-case-002 - Exit vehicle
 
 ### Preconditions
 - Player is alive
