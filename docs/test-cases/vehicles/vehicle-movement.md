@@ -1,4 +1,4 @@
-## test-case-003 - Vehicle Movement
+## test-case-003 - Vehicle movement
 
 ### Preconditions
 - Player is alive
