@@ -1,4 +1,4 @@
-## test-case-006 - Exit Vehicle Near Obstacle
+## test-case-006 - Exit vehicle near obstacle
 
 ### Preconditions
 - Player is alive
