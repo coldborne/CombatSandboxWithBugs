@@ -1,4 +1,4 @@
-## test-case-004 - Fire With Zero Ammo
+## test-case-004 - Fire with zero ammo
 
 ### Preconditions
 - Player is alive
