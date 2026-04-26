@@ -1,4 +1,5 @@
-﻿using Character;
+﻿using Capture;
+using Character;
 using UnityEngine;
 using Vehicles;
 
@@ -8,6 +9,7 @@ namespace UI
     {
         [SerializeField] private Player _player;
         [SerializeField] private Vehicle _vehicle;
+        [SerializeField] private CapturePoint _capturePoint;
 
         private bool _isVisible = true;
 
@@ -33,6 +35,8 @@ namespace UI
             GUILayout.Label("Inside vehicle: " + _player.IsInsideVehicle());
             GUILayout.Label("Ammo in magazine: " + _player.GetAmmoInMagazine());
             GUILayout.Label("Ammo reserve: " + _player.GetReservedAmmo());
+            GUILayout.Label("Capture progress: " + _capturePoint.GetCaptureProgress().ToString("F2"));
+            GUILayout.Label("Players in capture zone: " + _capturePoint.GetPlayersInsideCount());
             GUILayout.Label("Engine destroyed: " + _vehicle.IsModuleDestroyed(VehicleModuleType.Engine));
             GUILayout.EndArea();
         }

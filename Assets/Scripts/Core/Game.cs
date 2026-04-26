@@ -1,4 +1,5 @@
-﻿using Character;
+﻿using Capture;
+using Character;
 using UnityEngine;
 using Vehicles;
 
@@ -8,6 +9,7 @@ namespace Core
     {
         [SerializeField] private Player _player;
         [SerializeField] private Vehicle _vehicle;
+        [SerializeField] private CapturePoint _capturePoint;
 
         private Logger _logger;
 
@@ -20,6 +22,7 @@ namespace Core
         {
             _player.Initialize(_logger);
             _vehicle.Initialize(_logger);
+            _capturePoint.Initialize(_logger);
         }
     }
 }
