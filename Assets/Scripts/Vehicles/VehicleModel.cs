@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Logger = Core.Logger;
 
@@ -6,9 +7,17 @@ namespace Vehicles
 {
     public class VehicleModel : MonoBehaviour
     {
-        [SerializeField] private List<VehicleModule> _modules = new List<VehicleModule>();
+        private List<VehicleModule> _modules;
 
         private Logger _logger;
+
+        private void Awake()
+        {
+            _modules = new List<VehicleModule>();
+            Health health = GetComponent<Health>();
+            VehicleModule engine = new VehicleModule(VehicleModuleType.Engine, health);
+            _modules.Add(engine);
+        }
 
         public void Initialize(Logger logger)
         {

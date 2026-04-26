@@ -5,6 +5,12 @@
         private VehicleModuleType _type;
         private Health _health;
 
+        public VehicleModule(VehicleModuleType type, Health health)
+        {
+            _type = type;
+            _health = health;
+        }
+
         public bool IsDestroyed()
         {
             return _health.IsDead();
