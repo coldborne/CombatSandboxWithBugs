@@ -11,6 +11,7 @@
 ### Expected Result
 Capture progress increased by an amount equal to "number of seconds * number of captures per second".
 
+### Steps
 3. exit the point capture zone
 
 ### Expected Result
