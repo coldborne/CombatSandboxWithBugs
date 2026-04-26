@@ -1,6 +1,7 @@
 # Combat QA Sandbox
 
 Combat QA Sandbox is a small Unity-based testing playground created to demonstrate QA and engineering skills.
+You can play it yourself [Build](https://github.com/coldborne/CombatSandboxWithBugs/releases/tag/v0.1)
 
 The project focuses on:
 - infantry controls
