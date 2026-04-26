@@ -1,0 +1,74 @@
+# Test Plan v0.1
+
+## 1. Purpose
+It is better to draw up a real test plan in a specialized application (for example, HP Alm or Jira tools, here a simulation is used for ease of verification)
+
+This test plan defines the test scope and the exact set of test cases that must be executed for the current version of game.
+The goal is to validate core gameplay systems and identify defects in player control, weapon logic, vehicle interaction, vehicle damage, and capture point behavior.
+
+## 2. Test Object
+Project: Combat QA Sandbox  
+Version: v0.1
+Test type: Manual functional testing
+Platform: Windows
+
+## 3. Test Scope
+- player movement
+- weapon firing
+- reload logic
+- vehicle enter and exit
+- vehicle movement
+- engine module damage
+- capture point progress
+
+## 4. Out of Scope
+- multiplayer
+- AI
+- performance
+- audio
+- realistic ballistics
+- advanced vehicle physics
+- save/load
+- visual polish
+
+## 5. Entry Criteria
+- Project opens without compilation errors
+- `MainScene` starts in Play Mode
+- Smoke tests pass successfully
+
+## 6. Exit Criteria
+- all test cases from this plan are executed
+- failed cases are linked to bug reports
+- No critical or blocker level bugs
+
+## 7. Test Set
+| ID | Test Case | Type | Status | Related Bug |
+|---|---|---:|---|---|---|---|
+| TC-001 | Weapon fire with ammo | Functional | Passed | - |
+| TC-002 | Weapon fire with zero ammo | Functional | Failed | BUG-003 |
+| TC-003 | Reload weapon | Functional | Passed | - |
+| TC-004 | Enter vehicle during reload | Failed | BUG-001 |
+| TC-005 | Enter vehicle |Functional | Failed | BUG-004 |
+| TC-006 | Exit vehicle | Functional | No Run | - |
+| TC-007 | Vehicle movement | Functional | No Run | - |
+| TC-008 | Damage to vehicle engine | Functional | No Run | - |
+| TC-009 | Capture point progress | Functional | Failed | BUG-005, BUG-006 |
+| TC-010 | Capture point progress by a dead player | Negative | No Run | - |
+| TC-011 | Enter vehicle during reload | Functional | Failed | BUG-001 |
+| TC-012 | Exit vehicle near obstacle | Functional | Failed | BUG-004 |
+
+## 8. Test Execution Summary
+
+| Total | Passed | Failed | Blocked | Not Run |
+|---:|---:|---:|---:|---:|
+| 12 | 2 | 6 | 0 | 4 |
+
+## 9. Defects Found
+| Bug ID | Summary | Severity | Priority | Status |
+|---|---|---|---|---|
+| BUG-001 | Weapon reloading is reset and does not fully complete when entering a vehicle | Major | Normal | Open |
+| BUG-002 | When exiting a vehicle player enters the textures | Major | High | Open |
+| BUG-003 | Player can fire a weapon even without ammo | Critical | High | Open |
+| BUG-004 | When entering a vehicle, Player does not "climb" into the vehicle, but remains outside it. Control of the vehicle is retained | Major | Normal | Open |
+| BUG-005 | Capture progress is not reset after player leaves the capture zone | Blocker | High | Open |
+| BUG-006 | Capture progress is not displayed in text on the player's screen | Trivial | Low | Open |
