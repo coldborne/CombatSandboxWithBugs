@@ -17,5 +17,5 @@ Capture progress has not increased by an amount equal to "number of seconds * nu
 4. Move second player into capture zone
 5. Wait several seconds
 
-6. ### Expected Result
+### Expected Result
 Capture progress increased by an amount equal to "number of seconds * number of captures per second" only for one player.
